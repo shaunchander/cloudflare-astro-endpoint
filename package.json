@@ -1,16 +1,11 @@
 {
-  "name": "cloudflare-astro-endpoint",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/cloudflare": "^6.2.2",
-    "astro": "^2.3.0"
-  }
+	"name": "cloudflare-astro-endpoint",
+	"version": "1.0.0",
+	"dependencies": {
+		"turbo": "latest"
+	},
+  "workspaces": ["apps/**"],
+	"scripts": {
+		"build": "turbo run build"
+	}
 }
